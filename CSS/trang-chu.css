@@ -40,12 +40,13 @@
 @media screen and (max-width: 900px) {
     .banner {
         background-size: 150%;
-        height: 50vh;
+        min-height: 300px;
+        max-height: 300px;
     }
     .banner__wrapper {
         display: block;
-        width: 50%;
-        top: 40%;
+        width: 80%;
+        top: 20%;
         left: 50%;
         transform: translateX(-50%);
     }
@@ -53,13 +54,18 @@
         width: 100%;
     }
     .banner__title {
-        font-size: 1.5rem;
+        font-size: 2.5rem;
     }
     .banner__subtitle {
         display: none;
     }
     .video {
         display: none;
+    }
+}
+@media screen and (max-width: 400px) {
+    .banner__title {
+        font-size: 2rem;
     }
 }
 /* Banner: End */

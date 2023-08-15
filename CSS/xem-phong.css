@@ -1,32 +1,3 @@
-/* Header: Begin */
-.header {
-    background-color: #fff;
-}
-.logo a {
-    color: #000;
-}
-.logo img {
-    display: block !important;
-}
-.menu__link {
-    color: #000 !important;
-}
-.menu__icon {
-    color: #000 !important;
-}
-.menu__link:hover, .logo a:hover {
-    color: #F77E3E !important;
-}
-.booking {
-    background-color: #F77E3E;
-    border: 1px solid transparent;
-    color: #f3eee8;
-}
-.wrapper.mobile button i {
-    color: #000 !important;
-}
-/* Header: End */
-
 /* Banner: Begin */
 .banner {
     width: 80%;
