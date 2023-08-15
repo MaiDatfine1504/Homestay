@@ -1,0 +1,125 @@
+/* Banner: Begin */
+.banner {
+    position: relative;
+    z-index: 1;
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.1)), url("https://img.mvillage.vn/DGDsAjKeHcBeOwc6GDoZ6OIo-cVpo9lbHJscXBg_Qp0/rs:fit:1500:1500/plain/https%3A%2F%2Fs3.ap-southeast-1.amazonaws.com%2Fcdn.mvillage.vn%2FNNKN_2_ab7f9e4db7.jpeg") fixed;
+    width: 100%;
+    height: 100vh;
+}
+.banner__wrapper {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    top: 50%;
+    transform: translateY(-50%);
+}
+.banner__content {
+    text-align: center;
+    color: #fff;
+    width: 50%;
+}
+.banner__title {
+    font-weight: 800;
+    font-size: 3rem;
+}
+.banner__subtitle {
+    font-size: 1.2rem;
+}
+.banner__video {
+    text-align: center;
+    width: 50%;
+    margin: 0 1rem;
+}
+.video {
+    width: 601px;
+    height: 338px;
+    border: #fff solid 0.5rem;
+    border-radius: 10px;
+}
+@media screen and (max-width: 900px) {
+    .banner {
+        background-size: 150%;
+        height: 50vh;
+    }
+    .banner__wrapper {
+        display: block;
+        width: 50%;
+        top: 40%;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+    .banner__content {
+        width: 100%;
+    }
+    .banner__title {
+        font-size: 1.5rem;
+    }
+    .banner__subtitle {
+        display: none;
+    }
+    .video {
+        display: none;
+    }
+}
+/* Banner: End */
+
+/* Slider images: Begin */
+.slider {
+    width: 80%;
+    position: relative;
+    margin: 50px auto;
+}
+.slider i {
+    position: absolute;
+    background: #fff;
+    cursor: pointer;
+    font-size: 1.2rem;
+    height: 45px;
+    width: 45px;
+    text-align: center;
+    line-height: 45px;
+    border-radius: 50%;
+    top: 50%;
+    transform: translateY(-50%);
+}
+.slider i:first-child {
+    left: -23px;
+}
+.slider i:last-child {
+    right: -23px;
+}
+.slider__wrapper {
+    white-space: nowrap;
+    font-size: 0px;
+    cursor: pointer;
+    overflow: hidden;
+    scroll-behavior: smooth;
+}
+.slider__wrapper.dragging {
+    cursor: grab;
+    scroll-behavior: auto;
+}
+.slider__wrapper.dragging img {
+    pointer-events: none;
+}
+.slider__wrapper img {
+    height: 500px;
+    object-fit: cover;
+    margin-left: 14px;
+    width: calc(100% / 1.2);
+}
+.slider__wrapper img:first-child {
+    margin-left: 0;
+}
+/* Responsive slider */
+@media screen and (max-width: 900px) {
+    .slider__wrapper img {
+        height: 300px;
+        width: calc(100% / 1.2);
+    }
+    .slider i {
+        display: none;
+    }
+}
+/* Slider images: End */

@@ -1,0 +1,130 @@
+/* Header: Begin */
+.menu__items:first-child, .menu__items:first-child a {
+    color: #F77E3E !important;
+}
+/* Header: End */
+
+/* Banner: Begin */
+.banner {
+    position: relative;
+    width: 100%;
+}
+.banner__img {
+    width: 100%;
+    height: 600px;
+}
+.banner__img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    margin: 0;
+}
+.banner__gradient {
+    background: linear-gradient(to bottom, rgba(0, 0, 0, .1), rgba(0, 0, 0, .5));
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+.banner__content {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    text-align: center;
+    color: #fff;
+}
+.banner__content h1 {
+    margin: 0;
+    font-size: 4rem;
+}
+.banner__content p {
+    margin: 1rem 5rem;
+    font-size: 1.2rem;
+    word-spacing: 2px;
+}
+@media screen and (max-width: 900px) {
+    .banner__img {
+        height: 100vh;
+    }
+    .banner__content h1 {
+        margin: 0;
+        font-size: 2rem;
+    }
+    .banner__content p {
+        margin: 1rem;
+        font-size: 1rem;
+        word-spacing: 0px;
+    }
+}
+/* Banner: End */
+
+/* Story: Begin */
+.story {
+    width: 80%;
+    margin: 2rem auto;
+}
+.story__wrapper {
+    display: flex;
+    align-items: center;
+    margin-bottom: 5rem;
+    opacity: 0;
+    transition: all .5s ease-in-out;
+}
+.story__wrapper.is-scroll {
+    opacity: 1;
+}
+.story__img img {
+    width: 600px;
+    border-radius: 25px;
+}
+.story__content h2 {
+    font-size: 3rem;
+    margin: 0;
+}
+.story__content p {
+    font-weight: 100;
+    word-spacing: 3px;
+    gap: normal;
+}
+.story__content p span {
+    font-weight: 600;
+}
+@media screen and (min-width: 900px) {
+    .story__wrapper:nth-child(odd) .story__img {
+        margin-right: 5rem;
+    }
+    .story__wrapper:nth-child(even) .story__img {
+        margin-left: 5rem;
+    }
+    .story__wrapper:nth-child(2) {
+        flex-direction: row-reverse;
+    }
+}
+@media screen and (max-width: 900px) {
+    .story {
+        width: 90%;
+    }
+    .story__wrapper {
+        flex-direction: column;
+        margin-bottom: 3rem;
+    }
+    .story__img {
+        margin: 0;
+    }
+    .story__img img{
+        max-width: 300px;
+        object-fit: cover;
+    }
+    .story__content {
+        margin-top: 1rem;
+    }
+    .story__content h2 {
+        font-size: 1.4rem;
+        text-align: center;
+    }
+    .story__content p {
+        font-weight: 300;
+    }
+}
+/* Story: End */
